@@ -1,0 +1,209 @@
+/* styles.css */
+h1, h3, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px; /* Decrease the font size for h2 */
+}
+
+h4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px; /* Decrease the font size for h4 */
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s; /* Adding transitions for smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move the card slightly up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Dark mode styles for modal */
+.modal-content {
+    background-color: #333;
+    color: #fff;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.modal-header {
+    border-bottom: 1px solid #666;
+        font-family: 'Inter', sans-serif;
+
+}
+.modal-header .close {
+    color: #fff; /* Set the close button color to white */
+        font-family: 'Inter', sans-serif;
+
+}
+.modal-title {
+    color: #fff;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.modal-body {
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.form-control {
+    background-color: #fff; /* Set input background to white */
+    color: #000; /* Set input text color */
+    border: 1px solid #666;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.btn-primary,
+.btn-success {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+        font-family: 'Inter', sans-serif;
+
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+        font-family: 'Inter', sans-serif;
+
+}
+.table-responsive {
+    overflow-x: auto;
+        font-family: 'Inter', sans-serif;
+
+}
+
+#incomeTable {
+    max-width: 100%;
+        font-family: 'Inter', sans-serif;
+
+}
+#expensesTable {
+    max-width: 100%;
+        font-family: 'Inter', sans-serif;
+
+}
+/* Custom alert styles */
+.custom-alert {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Set z-index to ensure the alert appears above other elements */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.custom-alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.custom-alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.list-group {
+    background-color: #333; /* Set background color for the list group */
+    color: #fff; /* Set text color for list items */
+    border: none; /* Remove border */
+}
+
+.list-group-item {
+    background-color: #333; /* Set background color for list items */
+    border-color: #666; /* Set border color for list items */
+    color: #fff; /* Set text color for list items */
+}
+/* Target the pagination buttons in the DataTable */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    font-size: 0.8em; /* Adjust the font size to make the buttons smaller */
+    padding: 0.2em 0.4em; /* Adjust padding as needed */
+    margin: 0 2px; /* Adjust margin as needed */
+}
+
+/* Optionally, you can modify the active button size as well */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    font-size: 0.8em; /* Adjust the font size for the active button */
+    padding: 0.2em 0.4em; /* Adjust padding as needed */
+}
+
+.navbar-dark .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: text-decoration 0.3s; /* Adding transition effect for text-decoration change */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    text-decoration: none; /* Remove default underline on hover */
+}
+
+/* Underline effect on hover */
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust underline position */
+    width: 100%;
+    height: 2px;
+    background-color: yellow; /* Underline color */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease-out; /* Adding transition effect for underline */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+/* Highlighting Current Nav Item */
+.navbar-dark .navbar-nav .nav-item.active .nav-link::after {
+    transform: scaleX(1); /* Show underline for active item */
+}
+
+@media (max-width: 768px) {
+    /* Adjust the font size of the Navbar brand for screens smaller than 576px */
+    .navbar-brand {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+    .card-header h2 {
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+    .card-body h4 {
+        font-size: 18px; /* Adjust the font size for h4 elements */
+    }
+    .container h3 {
+        font-size: 20px; /* Set the desired font size for h3 elements */
+    }
+    
+}
+.list-font-size-18 {
+    font-size: 14px;
+}
