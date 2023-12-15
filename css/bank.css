@@ -1,0 +1,38 @@
+ /* Add your custom styles here */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .account-list {
+            list-style: none;
+            padding: 0;
+        }
+        .account-list li {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .account-list li span {
+            font-weight: bold;
+        }
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-add {
+            background-color: #4caf50;
+            color: white;
+        }
+        .btn-update {
+            background-color: #2196f3;
+            color: white;
+        }
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
