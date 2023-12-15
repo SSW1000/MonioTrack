@@ -40,7 +40,7 @@ To run MonioTrack locally, follow these steps:
    $servername = "localhost"; // Change this to your MySQL server's hostname
    $username = "your_username"; // Change this to your MySQL username
    $password = "your_password"; // Change this to your MySQL password
-   $dbname = "moniotrack_database"; // Change this to your MySQL database name
+   $dbname = "iet"; // Change this to your MySQL database name
 
    // Create a connection
    $db = mysqli_connect($servername, $username, $password, $dbname);
