@@ -125,7 +125,7 @@ if (empty($_SESSION["user_id"])) {
                     <i class="fas fa-university"></i> Bank Accounts
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="update_details.php">
                     <i class="fas fa-user"></i> User Details
                 </a>
