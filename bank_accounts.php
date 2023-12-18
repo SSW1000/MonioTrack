@@ -16,6 +16,7 @@ $user_result = mysqli_stmt_get_result($user_stmt);
 $user_row = mysqli_fetch_assoc($user_result);
 $user_name = $user_row['username'];
 $preferred_currency = $user_row['preferred_currency'];
+mysqli_stmt_close($user_stmt); // Close the statement for fetching username
 ?>
 
 <!DOCTYPE html>
@@ -68,6 +69,11 @@ $preferred_currency = $user_row['preferred_currency'];
             <li class="nav-item active">
                 <a class="nav-link" href="bank_accounts.php">
                     <i class="fas fa-university"></i> Bank Accounts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="update_details.php">
+                    <i class="fas fa-user"></i> User Details
                 </a>
             </li>
             <li class="nav-item">

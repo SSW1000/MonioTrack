@@ -17,6 +17,8 @@ else
     $user_row = mysqli_fetch_assoc($user_result);
     $user_name = $user_row['username'];
     $preferred_currency = $user_row['preferred_currency'];
+    mysqli_stmt_close($user_stmt); // Close the statement for fetching username
+
 
     $current_month = date('m');
     $current_year = date('Y');
@@ -162,6 +164,11 @@ mysqli_stmt_close($expenses_stmt);
             <li class="nav-item">
                 <a class="nav-link" href="bank_accounts.php">
                     <i class="fas fa-university"></i> Bank Accounts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="update_details.php">
+                    <i class="fas fa-user"></i> User Details
                 </a>
             </li>
             <li class="nav-item">

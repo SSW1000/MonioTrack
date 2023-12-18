@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 include 'includes/connection.php'; // Include the database connection file
 
@@ -53,7 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 mysqli_close($db); // Close the database connection
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>MonioTrack | Registration </title>

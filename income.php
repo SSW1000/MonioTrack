@@ -16,6 +16,8 @@ $user_result = mysqli_stmt_get_result($user_stmt);
 $user_row = mysqli_fetch_assoc($user_result);
 $user_name = $user_row['username'];
 $preferred_currency = $user_row['preferred_currency'];
+mysqli_stmt_close($user_stmt); // Close the statement for fetching username
+
 
 // Fetch all relevant incomes for the current user along with bank details
 $income_query = "SELECT income.*, bank_accounts.bank_name, bank_accounts.account_number FROM income LEFT JOIN bank_accounts ON income.bank_account_id = bank_accounts.id WHERE income.user_id = ?";
@@ -85,6 +87,11 @@ mysqli_close($db);
             <li class="nav-item">
                 <a class="nav-link" href="bank_accounts.php">
                     <i class="fas fa-university"></i> Bank Accounts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="update_details.php">
+                    <i class="fas fa-user"></i> User Details
                 </a>
             </li>
             <li class="nav-item">
