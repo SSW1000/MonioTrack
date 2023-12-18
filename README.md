@@ -1,4 +1,5 @@
 # MonioTrack
+![MonioTrack Logo](./images/mt.png "MonioTrack Logo")
 
 MonioTrack is a comprehensive expense and income tracking web application designed to help users manage their finances efficiently. This application allows users to conveniently track their expenses, income, and bank accounts.
 
