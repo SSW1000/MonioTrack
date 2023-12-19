@@ -1,4 +1,5 @@
-# MonioTrack
+#  ![MonioTrack Logo](./images/mt.png "MonioTrack Logo") MonioTrack 
+
 
 MonioTrack is a comprehensive expense and income tracking web application designed to help users manage their finances efficiently. This application allows users to conveniently track their expenses, income, and bank accounts.
 
@@ -66,16 +67,22 @@ To run MonioTrack locally, follow these steps:
 
 ## Technologies Used
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6)
-- **Backend:** PHP (v7.4)
-- **Database:** MySQL (v5.7)
+- **Frontend:** 
+  - HTML5 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+  - CSS3 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+  - JavaScript (ES6) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+- **Backend:** 
+  - PHP (v7.4) ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+- **Database:** 
+  - MySQL (v5.7) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
 - **Frameworks/Libraries:**
-  - [Bootstrap](https://getbootstrap.com/) (v4.5.2) - Frontend component library
-  - [jQuery](https://jquery.com/) (v3.5.1) - JavaScript library for DOM manipulation
-  - [DataTables](https://datatables.net/) (v1.13.7) - jQuery plugin for table manipulation
-  - [Font Awesome](https://fontawesome.com/) (v5.15.4) - Icon library
-  - [SweetAlert2](https://sweetalert2.github.io/) (v11.0.22) - Library for beautiful, responsive alerts
-  - [Chart.js](https://www.chartjs.org/) (v3.7.0) - JavaScript library for creating charts and graphs
+  - [Bootstrap](https://getbootstrap.com/) (v4.5.2) - Frontend component library ![Bootstrap](https://img.shields.io/badge/Bootstrap-v4.5.2-blue?logo=bootstrap)
+  - [jQuery](https://jquery.com/) (v3.5.1) - JavaScript library for DOM manipulation ![jQuery](https://img.shields.io/badge/jQuery-v3.5.1-blue?logo=jquery)
+  - [DataTables](https://datatables.net/) (v1.13.7) - jQuery plugin for table manipulation ![DataTables](https://img.shields.io/badge/DataTables-v1.13.7-blue?logo=jquery)
+  - [Font Awesome](https://fontawesome.com/) (v5.15.4) - Icon library ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-v5.15.4-blue?logo=font-awesome)
+  - [SweetAlert2](https://sweetalert2.github.io/) (v11.0.22) - Library for beautiful, responsive alerts ![SweetAlert2](https://img.shields.io/badge/SweetAlert2-v11.0.22-blue?logo=javascript)
+  - [Chart.js](https://www.chartjs.org/) (v3.7.0) - JavaScript library for creating charts and graphs ![Chart.js](https://img.shields.io/badge/Chart.js-v3.7.0-blue?logo=chart.js)
+
 
 ## Contributing
 
