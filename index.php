@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 session_start(); // Start the session
 
@@ -49,6 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 mysqli_close($db); // Close the database connection
 ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>MonioTrack | Login</title>
